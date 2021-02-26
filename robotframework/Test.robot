@@ -12,3 +12,7 @@ ${BROWSER}    chrome
 Open FromUrl Page
     Open Browser    ${FORM_URL}    ${BROWSER}
 
+*** Keywords ***
+Open Browser And Go To Page
+    Open Browser    ${FORM_URL}    ${BROWSER}
+
