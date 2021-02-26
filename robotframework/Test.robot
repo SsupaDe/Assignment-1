@@ -10,9 +10,8 @@ ${BROWSER}    chrome
 ${DELAY}    0
  
 * Test Cases *
-Page Should Show Home on Kaggle
-    [Documentation]    When visit the page it should show the text Hi Kaggle
-    Page Should Contain    Home
+Page Should Show Kaggle
+    Open Browser    ${FORM_URL}    ${BROWSER} 
  
 * Keywords *
 Open Browser And Go To Page
