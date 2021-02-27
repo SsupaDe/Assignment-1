@@ -1,15 +1,10 @@
 * Settings *
 Library    SeleniumLibrary
 
-Test Setup    Open Browser And Go To Page
-Test Teardown    Close Browser
- 
 * Variables *
-${FORM_URL}    https://www.kaggle.com/datasets
+${HOMEPAGE}    http://www.google.com
 ${BROWSER}    chrome
-${DELAY}    0.5
- 
+
 * Test Cases *
-Page Should Show Home on Kaggle
-    [Documentation]    When visit the page it should show the text Hi Kaggle
-    Page Should Contain    Home
+Go To homepage
+    Open Browser    ${HOMEPAGE} ${BROWSER}
